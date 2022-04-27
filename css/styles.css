@@ -2141,6 +2141,9 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+  .page-section h1.section-heading, .page-section .section-heading.h1 {
+    font-size:1.5rem;
+  }
 }
 @media (max-width: 991.98px) {
   .table-responsive-lg {
@@ -11827,7 +11830,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
 
   .styleAlign{
-    margin: 40vh 0 0;
+    margin: 30vh 0 0;
   }
 
   .strightLine{
@@ -11837,19 +11840,16 @@ section#contact form#contactForm :-ms-input-placeholder {
 
   .footer-text {
     color: #D80101;
-    font-size: 1.5rem;
-  }
-  .text-white{
-    margin: 0 0 0 9vh;
+    font-size: 1.5vw;
   }
   .text-white h1{
-      font-size: 10rem;
+    font-size: 10vw;
   }
   .text-white h5{
-    font-size: 2rem;
+    font-size: 2vw;
   } 
   .text-white a{
-    font-size: 2rem;
+    font-size: 2vw;
   }
   .serviceWrap{
     background-color: #FFF6E9;
