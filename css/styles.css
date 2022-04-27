@@ -2145,7 +2145,28 @@ progress {
     font-size:1.5rem;
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 991.98px) {  #introCarousel,
+  .carousel-inner,
+  .carousel-item,
+  .carousel-item.active {
+    height: auto!important;
+  }
+  
+  .carousel-item:nth-child(1) {
+    background-size: contain;
+  }
+  
+  .carousel-item:nth-child(2) {
+    background-size: contain;
+  }
+  
+  .carousel-item:nth-child(3) {
+    background-size: contain;
+  }  
+  
+  .carousel-item:nth-child(4) {
+    background-size: contain;
+  }
   .table-responsive-lg {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -4182,6 +4203,8 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 768px) {
+
+
   .navbar-expand-md {
     flex-wrap: nowrap;
     justify-content: flex-start;
