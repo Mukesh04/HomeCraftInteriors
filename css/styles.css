@@ -2141,9 +2141,6 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
-  .page-section h1.section-heading, .page-section .section-heading.h1 {
-    font-size:1.5rem;
-  }
 }
 @media (max-width: 991.98px) {  #introCarousel,
   .carousel-inner,
@@ -10543,7 +10540,7 @@ p {
   padding: 0;
 }
 .page-section h1.section-heading, .page-section .section-heading.h1 {
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: #D80101;
   margin: 0;
 }
@@ -10557,6 +10554,9 @@ p {
 @media (min-width: 768px) {
   section {
     padding: 9rem 0;
+  }
+  .page-section h1.section-heading, .page-section .section-heading.h1 {
+    font-size: 2.5rem;
   }
 }
 .btn-xl {
@@ -11060,13 +11060,6 @@ section#contact form#contactForm :-ms-input-placeholder {
     margin: 0 20px 0 0;
   }
 
-  .footer-text {
-    color: #D80101;
-    font-size: 2vw;
-    text-overflow: clip;
-    font-weight: 500;
-  }
-
   .services-section {
     padding-top: 20px;
   }
@@ -11074,58 +11067,14 @@ section#contact form#contactForm :-ms-input-placeholder {
   .serviceWrap{
     background-color: #FFF6E9;
     border-radius: 30px 0;
-    padding: 50px 0;
     min-height: 200px;
   }
-
-  .serviceWrap1{
-    min-height: 200px;
-  }
-  .serviceWrap2{
-    border-radius: 0 0 30px 0;
-  }
-
   .services-title {
     color: #003F67;
     font-size: 1.2rem;
     margin: 0;
     line-height: 1.2;
     padding: 0;
-  }
-
-  .design-arrow {
-    position: relative;
-  }
-  .design-arrow::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: -40px;
-    background: url('../assets/img/services/right-arrow.svg');
-    width: 82px;
-    height: 21px;
-  }
-  .design-text-title {
-    margin: 40px 0 10px 0;
-    position: relative;
-  }
-  .design-title-effect::before {
-    content: '';
-    background: #F9A428;
-    width: 100px;
-    height: 4px;
-    position: absolute;
-    top: 12px;
-    left: 0;
-  }
-  .design-title-effect::after {
-    content: '';
-    background: #F9A428;
-    width: 10px;
-    height: 4px;
-    position: absolute;
-    top: 12px;
-    left: 105px;
   }
   .design-text {
     width: 100%;
@@ -11136,75 +11085,131 @@ section#contact form#contactForm :-ms-input-placeholder {
     padding-left: 20px;
     box-sizing: border-box;
   }
-  .idea-arrow {
-    position: relative;
+  .design-text p {
+    padding: 0;
+    margin: 0;
   }
-  .idea-arrow::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -20px;
-    background: url('../assets/img/services/left-arrow.svg');
-    width: 82px;
-    height: 21px;
-  }
+  
   .idea-text {
     width: 100%;
+    min-height: 200px;
     text-align: left;
-    min-height: 180px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 20px;
     box-sizing: border-box;
   }
-  .idea-text-effect::before {
-    content: '';
-    background: #F9A428;
-    width: 100px;
-    height: 4px;
-    position: absolute;
-    top: 25px;
-    right: 15px;
+  .idea-text p {
+    padding: 0;
+    margin: 0;
   }
-  .idea-text-effect::after {
-    content: '';
-    background: #F9A428;
-    width: 10px;
-    height: 4px;
-    position: absolute;
-    top: 25px;
-    right: 0px;
-  }
+  
   .handover-wrap {
     background-color: #FFF6E9;
     border-radius: 30px 0 30px 0;
+    margin-top: 20px;
   }
   .handover-text {
+    min-height: 200px;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
     align-content: center;
     justify-content: center;
     margin: 0 auto;
     position: relative;
   }
-  .handover-text-effect::before {
-    content: '';
-    background: #F9A428;
-    width: 100px;
-    height: 4px;
-    position: absolute;
-    bottom: 0px;
-    left: calc(50% - 60px);
+  .handover-text p {
+    padding: 0;
+    margin: 0;
+    position: relative;
   }
-  .handover-text-effect::after {
-    content: '';
-    background: #F9A428;
-    width: 10px;
-    height: 4px;
-    position: absolute;
-    bottom: 0px;
-    left: calc(50% + 45px);
+  
+  @media (min-width: 767px) {
+    .design-arrow {
+      position: relative;
+    }
+    .design-arrow::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -20px;
+      background: url('../assets/img/services/right-arrow.svg');
+      width: 82px;
+      height: 21px;
+    }
+    .design-text-title {
+      position: relative;
+    }
+    .design-title-effect::before {
+      content: '';
+      background: #F9A428;
+      width: 30%;
+      height: 4px;
+      position: absolute;
+      top: 12px;
+      left: 0;
+    }
+    .design-title-effect::after {
+      content: '';
+      background: #F9A428;
+      width: 10px;
+      height: 4px;
+      position: absolute;
+      top: 12px;
+      left: calc(30% + 5px);
+    }
+    .idea-arrow {
+      position: relative;
+    }
+    .idea-arrow::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -20px;
+      background: url('../assets/img/services/left-arrow.svg');
+      width: 82px;
+      height: 21px;
+    }
+    .idea-text-effect::before {
+      content: '';
+      background: #F9A428;
+      width: 30%;
+      height: 4px;
+      position: absolute;
+      top: 25px;
+      right: 15px;
+    }
+    .idea-text-effect::after {
+      content: '';
+      background: #F9A428;
+      width: 10px;
+      height: 4px;
+      position: absolute;
+      top: 25px;
+      right: 0px;
+    }
+    .handover-text-effect::before {
+      content: '';
+      background: #F9A428;
+      width: 40%;
+      height: 4px;
+      position: absolute;
+      bottom: -10px;
+      left: calc(20%);
+    }
+    .handover-text-effect::after {
+      content: '';
+      background: #F9A428;
+      width: 10px;
+      height: 4px;
+      position: absolute;
+      bottom: -10px;
+      left: calc(60% + 5px);
+    }
   }
+
+
+
  
   .blankScreen{
     width: 10vh;
@@ -11214,10 +11219,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
 
   .banner-text-wrap {
-    margin: 30vh 0 0 10%;
+    margin: 20vh 0 0 10%;
     height: 100% !important;
+    padding-bottom: 10vh;
   }
-
   .banner-title {
     font-family: 'Comforter Brush';
     font-size: 15vw;
@@ -11227,7 +11232,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   .banner-sub-title {
     font-size: 2vw;
     font-weight: 500;
-    margin: -30px 0 30px 12px;
+    margin: -10px 0 30px 5px;
   }
   .banner-link {
     border-radius: 15px 0 15px 0;
@@ -11254,14 +11259,31 @@ section#contact form#contactForm :-ms-input-placeholder {
     border-radius: 15px 0 15px 0;
     z-index: -1;
   }
+  @media (min-width: 992px) {
+    .banner-text-wrap {
+      margin: 30vh 0 0 10%;
+      height: 100% !important;
+      padding-bottom: 0;
+    } 
+    .banner-sub-title {
+      margin: -30px 0 30px 12px;
+    }
+  }
+  
   .services-sub-wrap {
     margin-top: 50px;
   }
-  .portfolio-caption {
-    width: 340px;
-    padding: 10px;
-    border-radius: 0 0 10px 10px;
+  .portfolio-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0px 17px 16px #EBF1F58C;
+    border-radius: 10px;
+  }
+  .portfolio-caption {
+    width: 90%;
+    padding: 10px;
   }
   .portfolio-caption-heading {
     font-weight: 600;
@@ -11306,7 +11328,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
   .contact-wrap {
     margin-top: 20px;
-    padding: 100px 0;
+    padding: 50px 0;
     background: #FFF6E9;
     display: flex;
     justify-content: center;
@@ -11315,7 +11337,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     padding: 50px;
     background: #fff;
     border-radius: 50px 0 50px 0;
-    width: 50%;
+    width: 90%;
     box-sizing: border-box;
     text-align: center;
     position: relative;
@@ -11340,10 +11362,16 @@ section#contact form#contactForm :-ms-input-placeholder {
     background: url('../assets/img/dots.svg') no-repeat;
     z-index: -1;
   }
+  .footer-text {
+    color: #D80101;
+    font-size: 4vw;
+    text-overflow: clip;
+    font-weight: 500;
+  }
   .footer-link {
     border-radius: 15px 0 15px 0;
     padding: 10px 30px;
-    font-size: 1vw;
+    font-size: 2vw;
     background: #003F67;
     position: relative;
     text-decoration: none;
@@ -11366,5 +11394,84 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
   .contact-info {
     opacity: 0.8;
+    flex-direction: column;
+  }
+  @media (min-width: 767px) {
+    .contact-wrap {
+      padding: 80px 0;
+    }
+    .contact-inner-wrap {
+      width: 70%;
+    }
+    .footer-text {
+      font-size: 2vw;
+    }
+    .footer-link {
+      font-size: 1vw;
+    }
+    .contact-info  {
+      flex-direction: row;
+    }
+  }
+
+
+  .section-wrap {
+    position: relative;
+    padding-left: 10px;
+    flex-direction: column;
+  }
+  .section-wrap::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    background: #F9A428;
+    top: 0;
+    left: 0;
+  }
+  .section-subheading {
+    padding: 10px 0 0;
+  }
+  @media (min-width: 767px) {
+    .section-wrap {
+      flex-direction: row;
+      align-items: center;
+    }
+    .section-subheading {
+      padding: 0 20px;
+    }
+  }
+  .meeting-wrap {
+    display: flex;
+    flex-direction: row;
+  }
+  .meeting-wrap .serviceWrap {
+    width: 50%;
+  }
+  @media (min-width: 767px) {
+    .meeting-wrap {
+      flex-direction: column;
+    }
+    .meeting-wrap .serviceWrap {
+      width: 100%;
+    }
+  }
+  .idea-wrap {
+    display: flex;
+    flex-direction: row; 
+  }
+  .idea-wrap .serviceWrap {
+    width: 50%;
+  }
+  @media (min-width: 767px) {
+    .idea-wrap {
+      flex-direction: column;
+    }
+    .idea-wrap .serviceWrap {
+      width: 100%;
+    }
+    .handover-wrap {
+      margin-top: 0;
+    }
   }
 /* Custom style ends */
