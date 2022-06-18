@@ -11064,10 +11064,18 @@ section#contact form#contactForm :-ms-input-placeholder {
     padding-top: 20px;
   }
   
-  .serviceWrap{
+  .serviceWrap {
     background-color: #FFF6E9;
     border-radius: 30px 0;
     min-height: 200px;
+  }
+  .serviceWrap img {
+    width: 75px;
+  }
+  @media (min-width: 767px) {
+    .serviceWrap img {
+      width: 100px;
+    } 
   }
   .services-title {
     color: #003F67;
@@ -11109,14 +11117,17 @@ section#contact form#contactForm :-ms-input-placeholder {
     border-radius: 30px 0 30px 0;
     margin-top: 20px;
   }
+  .handover-wrap .serviceWrap {
+    min-height: 120px;
+  }
   .handover-text {
-    min-height: 200px;
     flex-direction: column;
     width: 70%;
     align-content: center;
     justify-content: center;
     margin: 0 auto;
     position: relative;
+    padding: 0 0 10px 0;
   }
   .handover-text p {
     padding: 0;
@@ -11125,6 +11136,13 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
   
   @media (min-width: 767px) {
+    .handover-wrap .serviceWrap {
+      min-height: 200px;
+    }
+    .handover-text {
+      min-height: 200px;
+      padding: 0;
+    }
     .design-arrow {
       position: relative;
     }
