@@ -11360,26 +11360,6 @@ section#contact form#contactForm :-ms-input-placeholder {
     text-align: center;
     position: relative;
   }
-  .contact-inner-wrap::before {
-    content: '';
-    position: absolute;
-    top: -40px;
-    right: -46px;
-    width: 200px;
-    height: 200px;
-    background: url('../assets/img/dots.svg') no-repeat;
-    z-index: -1;
-  }
-  .contact-inner-wrap::after {
-    content: '';
-    position: absolute;
-    bottom: -40px;
-    left: -46px;
-    width: 200px;
-    height: 200px;
-    background: url('../assets/img/dots.svg') no-repeat;
-    z-index: -1;
-  }
   .footer-text {
     color: #D80101;
     font-size: 4vw;
@@ -11431,7 +11411,6 @@ section#contact form#contactForm :-ms-input-placeholder {
       flex-direction: row;
     }
   }
-
 
   .section-wrap {
     position: relative;
