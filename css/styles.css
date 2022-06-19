@@ -11562,7 +11562,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 .banner-link {
   border-radius: 15px 0 15px 0;
   padding: 10px 30px;
-  font-size: 1vw;
+  font-size: 10px;
   background: #f9a428;
   border: 0;
   position: relative;
@@ -11680,7 +11680,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 .footer-link {
   border-radius: 15px 0 15px 0;
   padding: 10px 30px;
-  font-size: 2.5vw;
+  font-size: 10px;
   background: #003f67;
   position: relative;
   text-decoration: none;
@@ -11716,7 +11716,10 @@ section#contact form#contactForm :-ms-input-placeholder {
     font-size: 2vw;
   }
   .footer-link {
-    font-size: 1vw;
+    font-size: 16px;
+  }
+  .banner-link {
+    font-size: 16px;
   }
   .contact-info {
     flex-direction: row;
