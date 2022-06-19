@@ -91,7 +91,6 @@ SelectorEngine.find(SELECTOR_DATA_RIDE).forEach((el) => {
 
 onDOMContentLoaded(() => {
   const $ = getjQuery();
-
   if ($) {
     const JQUERY_NO_CONFLICT = $.fn[NAME];
     $.fn[NAME] = Carousel.jQueryInterface;

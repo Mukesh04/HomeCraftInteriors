@@ -25,6 +25,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="css/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/owl.css">
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/owl.js"></script>
 </head>
 
 <body id="page-top">
@@ -133,7 +137,7 @@
             <img src="assets/img/services/meeting.svg" alt="meeting">
           </div>
           <div class="design-text d-flex">
-            <div class="design-text-title">
+            <div class="design-text-title mb-2">
               <h1 class="services-title">design,</h1>
               <h1 class="services-title design-title-effect">production</h1>
             </div>
@@ -142,7 +146,7 @@
         </div>
         <div class="col-md-4 idea-wrap">
           <div class="idea-text">
-            <div class="design-text-title idea-text-effect">
+            <div class="design-text-title idea-text-effect mb-2">
               <h1 class="services-title">conceptualization,</h1>
               <h1 class="services-title">ideas</h1>
             </div>
@@ -157,10 +161,12 @@
             <img src="assets/img/services/handover.svg" alt="meeting">
           </div>
           <div class="handover-text d-flex">
-            <div class="design-text-title">
+            <div class="design-text-title mb-2">
               <h1 class="services-title">execution, handover</h1>
             </div>
-            <p class="handover-text-effect">Materials, finishes, brands – we use only the best. Hettich, Havells, Gobain etc – at the best prices.
+            <p class="handover-text-effect pb-2">Materials, finishes, brands – we use only the best. Hettich, Havells,
+              Gobain
+              etc – at the best prices.
             </p>
           </div>
         </div>
@@ -186,8 +192,8 @@
             </a>
             <div class="portfolio-caption">
               <div class="portfolio-caption-heading">LIVING ROOM</div>
-              <div class="portfolio-caption-subheading text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing
-                elitr</div>
+              <p class="portfolio-caption-subheading text-muted">A living room in your house is the first room anyone
+                views when he enters.</p>
             </div>
           </div>
         </div>
@@ -199,8 +205,8 @@
             </a>
             <div class="portfolio-caption">
               <div class="portfolio-caption-heading">MODULAR KITCHEN</div>
-              <div class="portfolio-caption-subheading text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing
-                elitr</div>
+              <p class="portfolio-caption-subheading text-muted">A modular kitchen has a clean, modern and trendy
+                look.</p>
             </div>
           </div>
         </div>
@@ -212,8 +218,8 @@
             </a>
             <div class="portfolio-caption">
               <div class="portfolio-caption-heading">BEDROOM</div>
-              <div class="portfolio-caption-subheading text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing
-                elitr</div>
+              <p class="portfolio-caption-subheading text-muted">Bedroom offer a retreat from the stresses of everyday
+                living.</p>
             </div>
           </div>
         </div>
@@ -225,8 +231,8 @@
             </a>
             <div class="portfolio-caption">
               <div class="portfolio-caption-heading">POOJA ROOM</div>
-              <div class="portfolio-caption-subheading text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing
-                elitr</div>
+              <p class="portfolio-caption-subheading text-muted">Its is an essential part of the home interior. Where
+                you spend your time peacefully.</p>
             </div>
           </div>
         </div>
@@ -238,8 +244,8 @@
             </a>
             <div class="portfolio-caption">
               <div class="portfolio-caption-heading">BATHROOM</div>
-              <div class="portfolio-caption-subheading text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing
-                elitr</div>
+              <p class="portfolio-caption-subheading text-muted">It washes away your troubles by adding Bubbles to
+                your life.</p>
             </div>
           </div>
         </div>
@@ -251,15 +257,14 @@
             </a>
             <div class="portfolio-caption">
               <div class="portfolio-caption-heading">FALSE CEILING</div>
-              <div class="portfolio-caption-subheading text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing
-                elitr</div>
+              <p class="portfolio-caption-subheading text-muted">House is not a home unless it is decorated by the
+                false ceiling.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
 
   <!-- Our Partners-->
   <section class="page-section" id="partners">
@@ -286,41 +291,78 @@
         <h3 class="section-subheading text-muted px-5"></h3>
       </div>
       <div class="row mt-5">
-        <div class="col-md-4 d-flex justify-content-center">
-          <div class="customer-wrap text-center">
-            <img class="customer-pic" src="./assets/img/customers/1.jpg">
-            <div class="customer-feed">
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-              a galley of type and scrambled it to make a type specimen book.
+        <div class="owl-carousel owl-theme">
+          <div class="d-flex justify-content-center customer-flex-wrap">
+            <div class="customer-wrap text-center">
+              <img class="customer-pic" src="./assets/img/customers/gaurav.jpg">
+              <div class="customer-feed">
+                "Quality of furniture is good. Staff has done a great job. Designs matched our expectations."
+              </div>
+              <div class="customer-name">GAURAV</div>
+              <div class="customer-job">Business Head at EY</div>
             </div>
-            <div class="customer-name">Arun Satur</div>
-            <div class="customer-job">Automobile Sales Executive</div>
           </div>
+
+          <div class="d-flex justify-content-center customer-flex-wrap">
+            <div class="customer-wrap text-center">
+              <img class="customer-pic" src="./assets/img/customers/yogesh.jpg">
+              <div class="customer-feed">
+                "They were quite flexible in customization and were open to feedbacks across process. Really Happy with
+                final output"
+              </div>
+              <div class="customer-name">YOGESH</div>
+              <div class="customer-job">Chief Technical Officer</div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center customer-flex-wrap">
+            <div class="customer-wrap text-center">
+              <img class="customer-pic" src="./assets/img/customers/radhika.jpg">
+              <div class="customer-feed">
+                "We don’t find people who get back to you without a wrinkle on their face when we keep questioning them
+                about the design aspects. That’s what I like about them."
+              </div>
+              <div class="customer-name">RADHKA</div>
+              <div class="customer-job">Sales Executive</div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center customer-flex-wrap">
+            <div class="customer-wrap text-center">
+              <img class="customer-pic" src="./assets/img/customers/ramakrishna.jpg">
+              <div class="customer-feed">
+                "We are extremely happy with the design as well as finished interiors. Project was executed very
+                professionally and completed on time."
+              </div>
+              <div class="customer-name">RAMAKRISHNA</div>
+              <div class="customer-job">Mechanical Engineer</div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center customer-flex-wrap">
+            <div class="customer-wrap text-center">
+              <img class="customer-pic" src="./assets/img/customers/swaroop.jpg">
+              <div class="customer-feed">
+                "Design experts made intelligent use of the available space bring our dream home interiors to life"
+              </div>
+              <div class="customer-name">SWAROOP</div>
+              <div class="customer-job">Product Designer</div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center customer-flex-wrap">
+            <div class="customer-wrap text-center">
+              <img class="customer-pic" src="./assets/img/customers/uma.jpg">
+              <div class="customer-feed">
+                "We were so relaxed throughout the process of designing our home interiors with HomeCrafts"
+              </div>
+              <div class="customer-name">UMASHREE</div>
+              <div class="customer-job">Financial Advisor</div>
+            </div>
+          </div>
+
         </div>
 
-        <div class="col-md-4 d-flex justify-content-center">
-          <div class="customer-wrap text-center">
-            <img class="customer-pic" src="./assets/img/customers/1.jpg">
-            <div class="customer-feed">
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-              a galley of type and scrambled it to make a type specimen book.
-            </div>
-            <div class="customer-name">Arun Satur</div>
-            <div class="customer-job">Automobile Sales Executive</div>
-          </div>
-        </div>
-
-        <div class="col-md-4 d-flex justify-content-center">
-          <div class="customer-wrap text-center">
-            <img class="customer-pic" src="./assets/img/customers/1.jpg">
-            <div class="customer-feed">
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-              a galley of type and scrambled it to make a type specimen book.
-            </div>
-            <div class="customer-name">Arun Satur</div>
-            <div class="customer-job">Automobile Sales Executive</div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -343,11 +385,9 @@
     </div>
   </section>
 
-
-
   <!-- Portfolio Modals-->
   <!-- Portfolio item 1 modal popup-->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -355,7 +395,6 @@
           <div class="row justify-content-center">
             <div class="col-lg-8">
               <div class="modal-body">
-                <!-- Project details-->
                 <h2 class="text-uppercase">Project Name</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/11.png" alt="..." />
@@ -382,237 +421,57 @@
         </div>
       </div>
     </div>
-  </div>
-  <!-- Portfolio item 2 modal popup-->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <div class="modal-body">
-                <!-- Project details-->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/12.png" alt="..." />
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
-                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
-                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>
-                    <strong>Client:</strong>
-                    Explore
-                  </li>
-                  <li>
-                    <strong>Category:</strong>
-                    Graphic Design
-                  </li>
-                </ul>
-                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                  <i class="fas fa-times me-1"></i>
-                  Close Project
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Portfolio item 3 modal popup-->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <div class="modal-body">
-                <!-- Project details-->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/13.png" alt="..." />
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
-                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
-                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>
-                    <strong>Client:</strong>
-                    Finish
-                  </li>
-                  <li>
-                    <strong>Category:</strong>
-                    Identity
-                  </li>
-                </ul>
-                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                  <i class="fas fa-times me-1"></i>
-                  Close Project
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Portfolio item 4 modal popup-->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <div class="modal-body">
-                <!-- Project details-->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/14.png" alt="..." />
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
-                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
-                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>
-                    <strong>Client:</strong>
-                    Lines
-                  </li>
-                  <li>
-                    <strong>Category:</strong>
-                    Branding
-                  </li>
-                </ul>
-                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                  <i class="fas fa-times me-1"></i>
-                  Close Project
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Portfolio item 5 modal popup-->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <div class="modal-body">
-                <!-- Project details-->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/15.png" alt="..." />
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
-                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
-                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>
-                    <strong>Client:</strong>
-                    Southwest
-                  </li>
-                  <li>
-                    <strong>Category:</strong>
-                    Website Design
-                  </li>
-                </ul>
-                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                  <i class="fas fa-times me-1"></i>
-                  Close Project
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Portfolio item 6 modal popup-->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <div class="modal-body">
-                <!-- Project details-->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/16.png" alt="..." />
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
-                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
-                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>
-                    <strong>Client:</strong>
-                    Window
-                  </li>
-                  <li>
-                    <strong>Category:</strong>
-                    Photography
-                  </li>
-                </ul>
-                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                  <i class="fas fa-times me-1"></i>
-                  Close Project
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  </div> -->
+
   <!-- Bootstrap core JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Core theme JS-->
   <script src="js/scripts.js"></script>
   <!-- MDB -->
   <script type="text/javascript" src="js/mdb.js"></script>
-  <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+  <script>
+    jQuery(document).ready(function ($) {
+      var owl = $('.owl-carousel');
+      owl.on('initialize.owl.carousel initialized.owl.carousel ' +
+        'initialize.owl.carousel initialize.owl.carousel ' +
+        'resize.owl.carousel resized.owl.carousel ' +
+        'refresh.owl.carousel refreshed.owl.carousel ' +
+        'update.owl.carousel updated.owl.carousel ' +
+        'drag.owl.carousel dragged.owl.carousel ' +
+        'translate.owl.carousel translated.owl.carousel ' +
+        'to.owl.carousel changed.owl.carousel',
+        function (e) {
+          $('.' + e.type)
+            .removeClass('secondary')
+            .addClass('success');
+          window.setTimeout(function () {
+            $('.' + e.type)
+              .removeClass('success')
+              .addClass('secondary');
+          }, 500);
+        });
+      owl.owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        loop: true,
+        nav: true,
+        lazyLoad: true,
+        margin: 10,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          960: {
+            items: 3
+          }
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
-
-
-
-<!-- <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-  <div class="row align-items-stretch mb-5">
-      <div class="col-md-6">
-          <div class="form-group">
-              <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
-              <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-          </div>
-          <div class="form-group">
-              <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-              <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-              <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-          </div>
-          <div class="form-group mb-md-0">
-              <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-              <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-          </div>
-      </div>
-      <div class="col-md-6">
-          <div class="form-group form-group-textarea mb-md-0">
-              <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-              <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-          </div>
-      </div>
-  </div>
-  <div class="d-none" id="submitSuccessMessage">
-      <div class="text-center text-white mb-3">
-          <div class="fw-bolder">Form submission successful!</div>
-          To activate this form, sign up at
-          <br />
-          <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-      </div>
-  </div>
-  <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-  <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
-</form> -->
