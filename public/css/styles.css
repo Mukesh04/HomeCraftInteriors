@@ -2185,13 +2185,6 @@ progress {
   }
 }
 @media (max-width: 991.98px) {
-  #introCarousel,
-  .carousel-inner,
-  .carousel-item,
-  .carousel-item.active {
-    height: auto !important;
-  }
-
   .carousel-item:nth-child(1) {
     background-size: contain;
   }
@@ -11338,31 +11331,61 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .carousel-item:nth-child(1) {
-  background-image: url("../assets/img/home/01.png");
+  background-image: url("../assets/img/home/01-sm.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .carousel-item:nth-child(2) {
-  background-image: url("../assets/img/home/02.png");
+  background-image: url("../assets/img/home/02-sm.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .carousel-item:nth-child(3) {
-  background-image: url("../assets/img/home/03.png");
+  background-image: url("../assets/img/home/03-sm.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .carousel-item:nth-child(4) {
-  background-image: url("../assets/img/home/04.png");
+  background-image: url("../assets/img/home/04-sm.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+@media (min-width: 400px) {
+  .carousel-item:nth-child(1) {
+    background-image: url("../assets/img/home/01-md.png");
+  }
+  .carousel-item:nth-child(2) {
+    background-image: url("../assets/img/home/02-md.png");
+  }
+  .carousel-item:nth-child(3) {
+    background-image: url("../assets/img/home/03-md.png");
+  }
+  .carousel-item:nth-child(4) {
+    background-image: url("../assets/img/home/04-md.png");
+  }
+}
+
+@media (min-width: 767px) {
+  .carousel-item:nth-child(1) {
+    background-image: url("../assets/img/home/01.png");
+  }
+  .carousel-item:nth-child(2) {
+    background-image: url("../assets/img/home/02.png");
+  }
+  .carousel-item:nth-child(3) {
+    background-image: url("../assets/img/home/03.png");
+  }
+  .carousel-item:nth-child(4) {
+    background-image: url("../assets/img/home/04.png");
+  }
 }
 
 .strightLine {
@@ -11544,25 +11567,25 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .banner-text-wrap {
-  margin: 20vh 0 0 10%;
   height: 100% !important;
-  padding-bottom: 10vh;
+  align-items: center;
+  margin-left: 10%;
 }
 .banner-title {
   font-family: "Comforter Brush";
-  font-size: 15vw;
+  font-size: 120px;
   margin-bottom: 0;
   font-weight: 500;
 }
 .banner-sub-title {
-  font-size: 2vw;
+  font-size: 20px;
   font-weight: 500;
   margin: -10px 0 30px 5px;
 }
 .banner-link {
   border-radius: 15px 0 15px 0;
   padding: 10px 30px;
-  font-size: 10px;
+  font-size: 12px;
   background: #f9a428;
   border: 0;
   position: relative;
@@ -11586,12 +11609,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 @media (min-width: 992px) {
   .banner-text-wrap {
-    margin: 30vh 0 0 10%;
     height: 100% !important;
-    padding-bottom: 0;
-  }
-  .banner-sub-title {
-    margin: -30px 0 30px 12px;
   }
 }
 
@@ -11718,6 +11736,12 @@ section#contact form#contactForm :-ms-input-placeholder {
   .footer-link {
     font-size: 16px;
   }
+  .banner-title {
+    font-size: 150px;
+  }
+  .banner-sub-title {
+    font-size: 30px;
+  }
   .banner-link {
     font-size: 16px;
   }
@@ -11792,9 +11816,9 @@ section#contact form#contactForm :-ms-input-placeholder {
  * Copyright 2013-2018 David Deutsch
  * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
  */
- .owl-theme .owl-nav {
-   display: none !important;
- }
+.owl-theme .owl-nav {
+  display: none !important;
+}
 .owl-theme .owl-dots {
   text-align: center;
   -webkit-tap-highlight-color: transparent;
