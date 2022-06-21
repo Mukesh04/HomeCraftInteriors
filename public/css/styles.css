@@ -11809,6 +11809,20 @@ section#contact form#contactForm :-ms-input-placeholder {
     margin-top: 0;
   }
 }
+
+.menu-text {
+  position: relative;
+  top: -2px;
+}
+.hamburger {
+  background: url('../assets/img/hamburger.png') no-repeat center;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  margin: 0px 0 0 5px;
+}
+
 /* Custom style ends */
 
 /**
